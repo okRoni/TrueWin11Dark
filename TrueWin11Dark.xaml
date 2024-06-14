@@ -10,6 +10,7 @@
 
     <system:Boolean x:Key="ThemeBlurEnabled">True</system:Boolean>
 
+    <!-- Selected Item Decoration -->
     <Style
         x:Key="ItemBulletSelectedStyle"
         BasedOn="{StaticResource BaseBulletStyle}"
@@ -17,7 +18,11 @@
         <Setter Property="Width" Value="4" />
         <Setter Property="Height" Value="20" />
         <Setter Property="CornerRadius" Value="2" />
-        <Setter Property="Background" Value="#47dfff" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="{DynamicResource SystemAccentColorLight2}" />
+            </Setter.Value>
+        </Setter>
         <Setter Property="Margin" Value="4,0,-8,0" />
     </Style>
 
