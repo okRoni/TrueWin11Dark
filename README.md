@@ -22,6 +22,7 @@
 - Blur effect similar to the windows start menu
 - Same accent color as the system
 - Curved layout
+- Version without transparency effect avaiable [here](https://github.com/O-RONI/TrueWin11Dark/blob/main/TrueWin11Dark-Solid.xaml)
 
 ## 🛠️ Installation
 
