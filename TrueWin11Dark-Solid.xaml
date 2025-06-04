@@ -1,6 +1,6 @@
 <!--
-    Name: True Windows 11 (S)
-    IsDark: False
+    Name: True Windows 11 Solid
+    IsDark: True
     HasBlur: False
 -->
 <ResourceDictionary
@@ -13,6 +13,7 @@
         <ResourceDictionary Source="pack://application:,,,/Themes/Base.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
+    <!-- Blur behind the window -->
     <system:Boolean x:Key="ThemeBlurEnabled">False</system:Boolean>
 
     <!-- Selected Item Decoration -->
@@ -63,21 +64,15 @@
         TargetType="{x:Type Border}">
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="BorderBrush" Value="#424242" />
-
-        <Setter Property="Background">
-            <Setter.Value>
-                <SolidColorBrush Color="#202020" Opacity="1" />
-            </Setter.Value>
-        </Setter>
+        <Setter Property="Background" Value="#202020" />
         <Setter Property="CornerRadius" Value="8" />
         <Setter Property="UseLayoutRounding" Value="True" />
-        <Setter Property="SnapsToDevicePixels" Value="True" />
     </Style>
     <Style
         x:Key="WindowStyle"
         BasedOn="{StaticResource BaseWindowStyle}"
-        TargetType="{x:Type Window}">
-    </Style>
+        TargetType="{x:Type Window}"/>
+    <Style x:Key="WindowRadius" TargetType="{x:Type Border}" />
 
     <!-- Result items styles -->
     <system:Double x:Key="ResultItemHeight">46</system:Double>
