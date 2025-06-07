@@ -29,6 +29,7 @@
 3. Select **TrueWin11Dark** via flow's theme section.
 
 
->[!tip] Recommended settings:
+>[!tip]
+>Recommended settings:
 > - Segoe UI fonts
 > - acrylic blur!
